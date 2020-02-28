@@ -1,0 +1,38 @@
+/*** part of it take from https://codepen.io/bneupane/pen/KMKzZZ ***/
+
+.addToFavorite {
+    padding-left: 90%;
+}
+
+.fa-heart-o {
+    color: red;
+    cursor: pointer;
+}
+
+.fa-heart {
+    color: red;
+    cursor: pointer;
+}
+
+.addToFavorite strong {
+    text-decoration: red;
+}
+
+.toCopy {
+    display: none;
+    visibility: hidden;
+}
+
+.weather-container-favorite {
+    float: left;
+    margin: 20px 0;
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .2);
+    border: 1px solid #cd8109;
+    border-bottom: 10px solid #cd8109;
+}
+
+#Favorite {
+    display: flex;
+}

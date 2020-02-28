@@ -1,0 +1,216 @@
+* {
+    font-family: "Rimouski";
+}
+
+
+/* body {
+    background-color: #293251;
+} */
+
+
+/*clone weather*/
+
+.clone_container {
+    display: inline-block;
+    border-right: 1px solid #aaa;
+    padding-right: 4px;
+}
+
+.clone_container:last-child {
+    border-right: none;
+}
+
+
+/*hide home*/
+
+
+/* .favoriteDiv>a,
+.favoriteDiv>button,
+.favoriteDiv>div,
+.favoriteDiv>div>p {
+    display: none;
+} */
+
+.favoriteDiv.hide_this>a,
+.favoriteDiv.hide_this>button,
+.favoriteDiv.hide_this>div,
+.favoriteDiv.hide_this>div>p {
+    display: none;
+}
+
+.hide_this>* {
+    display: none;
+}
+
+
+/*IMAGE*/
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.night {
+    transition: fill .1s ease-out, opacity .1s ease-out;
+    /* The image used */
+    background-image: url("../icons/night.svg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #D5D8DC;
+}
+
+.day {
+    transition: fill .1s ease-out, opacity .1s ease-out;
+    /* The image used */
+    background-image: url("../icons/day.svg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    color: #111;
+}
+
+
+/*END IMAGE*/
+
+[name="city"] {
+    padding: .3em 2em 0em 2em;
+}
+
+.container {
+    width: 300px;
+    /* background-color: #FFF; */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding-bottom: 50px;
+    height: 0;
+    /* collapse the container's height */
+    position: relative;
+    /* create positioning context for svg */
+}
+
+.app-title {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.app-title p {
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    /* color: #aaa; */
+    /* color: #111111; */
+}
+
+.notification {
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p {
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.input-group {
+    margin-left: 35%;
+}
+
+.weather-container {
+    width: 300px;
+    height: 265px;
+    font-weight: 500;
+    /* background-color: #F4F9FF; */
+    display: inline-block;
+    /* border-right: 1px solid #aaa; */
+    /* border: 1px solid #aaa; */
+    margin-left: 35%;
+}
+
+.weather-container:last-child {
+    border-right: none;
+}
+
+
+/*
+.clone_container {
+    display: inline-block;
+    border-right: 1px solid #aaa;
+    padding-right: 4px;
+}
+
+.clone_container:last-child {
+    border-right: none;
+}
+*/
+
+.weather-icon {
+    display: block;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+    background-color: #D6EAF8;
+}
+
+.temperature-value {
+    width: 300px;
+    height: 60px;
+}
+
+.temperature-value p {
+    padding: 0;
+    margin: 0;
+    /* color: #293251; */
+    /* color: #aaa; */
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/* .temperature-value p:hover {} */
+
+.temperature-value span {
+    /* color: #293251; */
+    /* color: #aaa; */
+    font-size: 0.5em;
+}
+
+
+/* .temperature-description {} */
+
+.temperature-description p {
+    padding: 8px;
+    margin: 0;
+    /* color: #293251; */
+    /* color: #aaa; */
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/* .location {} */
+
+.location p {
+    margin: 0;
+    padding: 0;
+    /* color: #293251; */
+    /* color: #aaa; */
+    text-align: center;
+    font-size: 0.8em;
+}

@@ -1,0 +1,125 @@
+/* Style the tab */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    /*background-color: #f1f1f1;*/
+    width: 100%;
+    background-color: #D6EFFF;
+    box-sizing: border-box;
+    font-family: 'Gotham Rounded', sans-serif;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab .LOGO {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: black;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/********old******
+
+.navbar .navbar-nav .nav .nav-item .current {
+    background-color: #AFE0FF;
+}
+
+.navbar {
+    width: 100vw;
+    background-color: #D6EFFF;
+    box-sizing: border-box;
+    font-family: 'Gotham Rounded', sans-serif;
+}
+
+.navbar .navbar-nav .nav {
+    border: 1px solid black;
+    position: relative;
+    padding-left: 4px;
+    margin-block-end: 0px;
+}
+
+.navbar .navbar-nav .nav .nav-item {
+    color: black;
+    padding: 0px 10px 0px 13px;
+}
+
+.navbar .navbar-nav .nav button {
+    display: none;
+}
+
+
+/*responsive*/
+
+
+/*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 500px) {
+    /*shows elements in a column*/
+    .navbar .navbar-nav .nav {
+        flex-direction: column;
+    }
+    /* deletes margin on top or bottom of the a tag*/
+    .navbar .navbar-nav .nav li {
+        margin: 0;
+    }
+    /* makes sure that the a tag will take the entire screen*/
+    .navbar .navbar-nav .nav .nav-item {
+        display: block;
+    }
+    .navbar .navbar-nav .nav button {
+        /*makes the button visible*/
+        display: block;
+        /*since we are here, we can style it a little bit!*/
+        padding: 2vw;
+        font-size: 10vh;
+        background-color: #AFE0FF;
+        border: none;
+        /*outline none removes the default blue border that appears anytime you click on the button*/
+        outline: none;
+        cursor: pointer;
+        align-self: flex-start;
+    }
+}

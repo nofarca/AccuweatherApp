@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="stylesheet" href="style/weekly.css" type="text/css">
+    <link rel="stylesheet" href="style/navigation.css" type="text/css">
+    <link rel="stylesheet" href="style/favorites.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <!--search icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NC Weather App</title>
+</head>
+
+<body>
+    <div id="fullImage" class="day">
+
+        <div class="tab">
+            <!-- <button class="tablinks" onclick="showTab(event, 'Favorite')">Favorites</button> -->
+            <button class="tablinks" onclick="showTab(event, 'Home')" id="defaultOpen">Home</button>
+            <span class="LOGO">
+                Nofar C Weather App
+            </span>
+        </div>
+
+
+        <div class="details">
+
+            <!-- home box -->
+            <div id="Home" class="tabcontent">
+
+                <!-- <div class="addToFavorite">
+                    <strong>Add To Favorite</strong>
+                    <span id=heart><i class="fa fa-heart-o" aria-hidden="true" onclick="clickAddToFavoriets()"></i> </span>
+                </div> -->
+
+                <div class="input-group">
+                    <form class="input-group-append" action="" method="">
+                        <label for="city"> </label>
+                        <input type="text" placeholder="City Weather ex:Tel-Aviv" name="city" id="city">
+                        <button type="submit" class="btn btn-secondary"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+
+                <!--weather details img-->
+
+                <div class="weather-container">
+                    <div class="weatherForm">
+
+
+
+                        <div class="app-title">
+                            <p><strong>-</strong></p>
+                        </div>
+                        <p style="text-align: center;"><strong>Current Weather</strong></p>
+                        <div class="weather-icon">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+
+                        <div class="temperature-value">
+                            <p><strong>- °<span>C</span></strong></p>
+                        </div>
+
+                        <div class="temperature-description">
+                            <p><strong> - </strong></p>
+                        </div>
+
+                        <div class="location">
+                            <p><strong>-</strong></p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Weekly-->
+                <div class="container-fluid">
+
+                    <div class="row-fluid">
+                        <!--Day 1-->
+                        <div class="span3 first">
+                            <div class="weekly-weather-header-first">
+                                <h2 class="date"> Day 1</h2>
+                                <p class="weather-icon" style="text-align: center;"><strong>Icon</strong></p>
+                            </div>
+                            <div class="weekly-weather-details">
+                                <p class="temperatureMin"><strong>Min Temp:</strong></p>
+                                <p class="temperatureMax"><strong>Max Temp:</strong></p>
+                                <p class="temperature-description"><strong>description</strong></p>
+                                <p class="location"><strong>location</strong></p>
+                            </div>
+                        </div>
+
+                        <!--Day 2-->
+                        <div class="span3 second">
+                            <div class="weekly-weather-header-second">
+                                <h2 class="date">Day 2</h2>
+                                <p class="weather-icon" style="text-align: center;"><strong>Icon</strong></p>
+                            </div>
+                            <div class="weekly-weather-details">
+                                <p class="temperatureMin"><strong>Min Temp:</strong></p>
+                                <p class="temperatureMax"><strong>Max Temp:</strong></p>
+                                <p class="temperature-description"><strong>description</strong></p>
+                                <p class="location"><strong>location</strong></p>
+                            </div>
+                        </div>
+
+                        <!--Day 3-->
+                        <div class="span3 third">
+                            <div class="weekly-weather-header-third">
+                                <h2 class="date">Day 3</h2>
+                                <p class="weather-icon" style="text-align: center;"><strong>Icon</strong></p>
+                            </div>
+                            <div class="weekly-weather-details">
+                                <p class="temperatureMin"><strong>Min Temp:</strong></p>
+                                <p class="temperatureMax"><strong>Max Temp:</strong></p>
+                                <p class="temperature-description"><strong>description</strong></p>
+                                <p class="location"><strong>location</strong></p>
+                            </div>
+                        </div>
+
+                        <!--Day 4-->
+                        <div class="span3 fourth">
+                            <div class="weekly-weather-header-fourth">
+                                <h2 class="date">Day 4</h2>
+                                <p class="weather-icon" style="text-align: center;"><strong>Icon</strong></p>
+                            </div>
+                            <div class="weekly-weather-details">
+                                <p class="temperatureMin"><strong>Min Temp:</strong></p>
+                                <p class="temperatureMax"><strong>Max Temp:</strong></p>
+                                <p class="temperature-description"><strong>description</strong></p>
+                                <p class="location"><strong>location</strong></p>
+                            </div>
+                        </div>
+
+                        <!--Day 5-->
+                        <div class="span3 fifth">
+                            <div class="weekly-weather-header-fifth">
+                                <h2 class="date">Day 5</h2>
+                                <p class="weather-icon" style="text-align: center;"><strong>Icon</strong></p>
+                            </div>
+                            <div class="weekly-weather-details">
+                                <p class="temperatureMin"><strong>Min Temp:</strong></p>
+                                <p class="temperatureMax"><strong>Max Temp:</strong></p>
+                                <p class="temperature-description"><strong>description</strong></p>
+                                <p class="location"><strong>location</strong></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- end HomeDiv -->
+
+
+            <!--favorite box-->
+            <!-- favorite Tab-->
+            <div id="Favorite" class="tabcontent">
+                <div class="startFavorites"></div>
+                <div class="weather-container-favorite toCopy">
+                    <div class="weatherForm-favorite">
+                        <div class="app-title-favorite">
+                            <p>Current Weather</p>
+                        </div>
+
+                        <div class="weather-icon-favorite">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+
+                        <div class="temperature-value-favorite">
+                            <p>- °<span>C</span></p>
+                        </div>
+
+                        <div class="temperature-description-favorite">
+                            <p> - </p>
+                        </div>
+
+                        <div class="location-favorite">
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end favoriteDiv -->
+
+
+        </div>
+    </div>
+    <!-- 
+    <script type="text/javascript" type="JSON" src="jsonFiles/currentCondition.json"></script>
+    <script type="text/javascript" type="JSON" src="jsonFiles/search_city.json"></script>
+    <script type="text/javascript" type="JSON" src="jsonFiles/weathercity.json"></script> -->
+    <script src="scripts/mainScript.js"></script>
+    <script src="scripts/favorites.js"></script>
+    <script src="scripts/loadingWeatherData.js"></script>
+    <script src="scripts/jquery-3.4.1.js"></script>
+</body>
+
+
+
+</html>
